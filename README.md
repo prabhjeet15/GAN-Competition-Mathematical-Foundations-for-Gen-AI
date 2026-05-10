@@ -52,16 +52,6 @@ You must decode and standardize all images before training.
 
 ---
 
-# Start
-
-Nov 12, 2025
-
-# Close
-
-Nov 17, 2025
-
----
-
 # Description
 
 You are given a dataset of image shards, each record stored as a JSONL entry containing base64-encoded pixel data, metadata like rotation, inversion, and size — and occasional chaos (missing keys, invalid encodings, random alpha masks).
@@ -77,21 +67,7 @@ Your job is to:
 
 ---
 
-# Submission Format & Instructions
-
-Each participant must submit a `submission.csv` containing 1000 rows — one per generated image — with Inception-V3 (`pool3` layer) feature vectors extracted from their generated samples.
-
-Your task is to train a GAN (or any generative model) to learn the visual distribution of these images and generate new samples of similar quality.
-
 Your generated images will be evaluated against real image features using the Fréchet Inception Distance (FID) metric.
-
----
-
-# Submission File
-
-- **Filename:** `submission.csv`
-- **Number of rows:** `1000` (exactly same as `solution.csv`)
-- **Number of columns:** `1 id column + 2048 feature columns (f0 … f2047)`
 
 ---
 
